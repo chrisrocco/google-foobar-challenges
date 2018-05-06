@@ -2,10 +2,8 @@ from itertools import combinations
 
 
 def answer(num_buns, num_required):
-    n = num_buns
-    r = n - num_required + 1
-    result_set = [[] for i in range(n)]
-    for idx, combo in enumerate(combinations(range(n), r)):
+    result_set = [[] for _ in range(num_buns)]
+    for idx, combo in enumerate(combinations(range(num_buns), num_buns - num_required + 1)):
         for key in combo:
             result_set[key].append(idx)
     return result_set
