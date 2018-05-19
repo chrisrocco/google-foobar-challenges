@@ -1,5 +1,7 @@
 from math import *
 
+# Stole this beautiful solution from StackOverflow
+
 def answer(total_lambs):
     phi = (1 + sqrt(5)) / 2
     tau = (1 - sqrt(5)) / 2
